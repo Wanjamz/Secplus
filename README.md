@@ -1,5 +1,20 @@
 # SecPlus Consulting: WordPress website
 
+## Preview the website
+
+**[Open the live preview](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Wanjamz/Secplus/main/preview/blueprint.json)**
+
+The link runs the complete website in your own browser using WordPress Playground. Nothing needs installing and no account is needed. It takes about 30–60 seconds to load the first time. You can click through every page, open the chat assistant and look around the admin area (you're signed in automatically).
+
+Please note:
+- The preview is temporary: anything changed there is lost when the tab closes.
+- The contact form and WhatsApp hand-over are for demonstration; enquiries aren't emailed from the preview.
+- Contact details, team profiles and some other items are intentionally blank until confirmed (see the launch checklist under **SecPlus → Launch checklist** in the admin area).
+- Insight guides are shown published for review; on the live site they stay as "Pending Review" until approved.
+- Photos are AI-generated placeholders for approval; the people shown are not SecPlus staff.
+
+---
+
 A custom, lightweight WordPress **block theme** (`secplus`) plus a small companion plugin (`secplus-core`). Everything is built from the approved content blueprint, the homepage design reference and the original SecPlus logo.
 
 | Folder | What it is |

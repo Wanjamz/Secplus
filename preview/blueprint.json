@@ -1,0 +1,27 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "SecPlus Consulting website preview",
+		"description": "Installs the SecPlus theme and plugin from GitHub and imports all website content for review.",
+		"author": "Wanjamz"
+	},
+	"landingPage": "/",
+	"preferredVersions": { "php": "8.2", "wp": "latest" },
+	"login": true,
+	"steps": [
+		{
+			"step": "installTheme",
+			"themeData": { "resource": "url", "url": "https://raw.githubusercontent.com/Wanjamz/Secplus/main/dist/secplus-theme.zip" },
+			"options": { "activate": true }
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": { "resource": "url", "url": "https://raw.githubusercontent.com/Wanjamz/Secplus/main/dist/secplus-core.zip" },
+			"options": { "activate": true }
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; secplus_core_run_import( array( 'publish_guides' => true ) );"
+		}
+	]
+}
