@@ -6,7 +6,7 @@ Description: Lightweight custom block theme for SecPlus Consulting, a Kenyan cor
 Requires at least: 6.6
 Tested up to: 6.8
 Requires PHP: 7.4
-Version: 1.2.1
+Version: 1.2.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: secplus
@@ -2064,6 +2064,119 @@ body.page-template-page-editorial h2:is(.sp-hero-card__title, .sp-form-card__tit
 }
 body.page-template-page-editorial .sp-faq-group__head h2.wp-block-heading { font-size: var(--wp--preset--font-size--large); line-height: 1.25; }
 .page-template-page-editorial .sp-prose .wp-block-post-content h2.wp-block-heading { font-size: var(--wp--preset--font-size--large); line-height: 1.25; }
+
+/* ==========================================================================
+   23. Mobile header and menu
+   ========================================================================== */
+
+/* Full-screen menu: one vertical list that scrolls if it is taller than the screen. */
+.sp-nav .wp-block-navigation__responsive-container.is-menu-open {
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: contain;
+}
+.sp-nav .is-menu-open .wp-block-navigation__responsive-close,
+.sp-nav .is-menu-open .wp-block-navigation__responsive-dialog,
+.sp-nav .is-menu-open .wp-block-navigation__responsive-container-content {
+	height: auto !important;
+	min-height: 0;
+	width: 100%;
+	max-width: 32rem;
+}
+.sp-nav .is-menu-open .wp-block-navigation__responsive-container-content {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch !important;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+}
+.sp-nav .is-menu-open .wp-block-navigation__container,
+.sp-nav .is-menu-open .wp-block-navigation__submenu-container {
+	display: flex !important;
+	flex-direction: column !important;
+	flex-wrap: nowrap !important;
+	align-items: stretch !important;
+	height: auto !important;
+	width: 100% !important;
+	gap: 0 !important;
+}
+.sp-nav .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item {
+	display: block;
+	width: 100%;
+	padding: 0.35rem 0 0.6rem;
+	border-bottom: 1px solid var(--sp-line);
+}
+.sp-nav .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item.sp-nav__cta-mobile { border-bottom: 0; padding-top: 1.25rem; }
+.sp-nav .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+	display: block;
+	padding: 0.65rem 0 !important;
+	font-size: 1.2rem;
+	font-weight: 750;
+	color: var(--sp-navy);
+}
+.sp-nav .is-menu-open .wp-block-navigation__submenu-icon { display: none; }
+.sp-nav .is-menu-open .wp-block-navigation__submenu-container {
+	position: static !important;
+	padding: 0 0 0.25rem 0.9rem !important;
+	border-left: 2px solid var(--sp-tint) !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+	background: transparent !important;
+}
+.sp-nav .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	display: block;
+	padding: 0.5rem 0 !important;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--sp-muted);
+}
+.sp-nav .is-menu-open .sp-nav__cta-mobile .wp-block-navigation-item__content {
+	display: block !important;
+	text-align: center;
+	padding: 0.95rem 1.4rem !important;
+	border-radius: 999px;
+	background: var(--sp-blue);
+	color: var(--sp-navy) !important;
+	font-size: 1rem !important;
+}
+
+/* Keep the close button in view while the menu list scrolls. */
+.sp-nav .is-menu-open .wp-block-navigation__responsive-container-close {
+	position: fixed !important;
+	top: 1rem;
+	right: 1.25rem;
+	z-index: 3;
+	box-shadow: 0 6px 18px -8px rgba(22, 18, 46, 0.35);
+}
+.admin-bar .sp-nav .is-menu-open .wp-block-navigation__responsive-container-close { top: calc(var(--wp-admin--admin-bar--height, 46px) + 1rem); }
+
+/* Phones: the floating logo steps aside once the page scrolls; the menu button stays. */
+@media (max-width: 781px) {
+	.page-template-page-editorial .sp-header__logo {
+		transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 0s;
+	}
+	.page-template-page-editorial .sp-site-header.is-scrolled .sp-header__logo {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-140%);
+		pointer-events: none;
+		transition: opacity 0.2s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 0.3s;
+	}
+	.page-template-page-editorial .sp-header .sp-nav { transition: border-radius 0.25s ease, padding 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; }
+	.page-template-page-editorial .sp-site-header.is-scrolled .sp-header .sp-nav {
+		border: 1px solid rgba(31, 26, 61, 0.1);
+		border-radius: 999px;
+		padding: 0 4px;
+		box-shadow: 0 10px 30px -14px rgba(22, 18, 46, 0.45);
+	}
+	/* Keep the button in the same corner whether or not the logo is showing. */
+	.page-template-page-editorial .sp-header__inner { position: relative; }
+	.page-template-page-editorial .sp-site-header.is-scrolled .sp-header__logo { position: absolute; left: 0; }
+	.page-template-page-editorial .sp-site-header.is-scrolled .sp-header .sp-nav { margin-left: auto; margin-right: 0; }
+}
+@media (max-width: 781px) and (prefers-reduced-motion: reduce) {
+	.page-template-page-editorial .sp-site-header.is-scrolled .sp-header__logo { transform: none; }
+}
 
 /* ==========================================================================
    20. Editor tweaks

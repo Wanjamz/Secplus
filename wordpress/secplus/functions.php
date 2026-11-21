@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SECPLUS_THEME_VERSION', '1.2.1' );
+define( 'SECPLUS_THEME_VERSION', '1.2.2' );
 
 require_once get_theme_file_path( 'inc/icons.php' );
 require_once get_theme_file_path( 'inc/helpers.php' );

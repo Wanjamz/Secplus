@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       SecPlus Core
  * Description:       Site functionality for SecPlus Consulting: consultation enquiry form and enquiry inbox, WhatsApp-style FAQ chat, contact settings, launch checklist (Pending Client Confirmation items), SEO metadata and the website content importer. Designed for the SecPlus block theme.
- * Version:           1.2.0
+ * Version:           1.2.1
  * Requires at least: 6.6
  * Requires PHP:      7.4
  * Author:            SecPlus Consulting
@@ -14,7 +14,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SECPLUS_CORE_VERSION', '1.2.0' );
+define( 'SECPLUS_CORE_VERSION', '1.2.1' );
 define( 'SECPLUS_CORE_FILE', __FILE__ );
 define( 'SECPLUS_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SECPLUS_CORE_URL', plugin_dir_url( __FILE__ ) );

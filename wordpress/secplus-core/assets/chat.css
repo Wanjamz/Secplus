@@ -278,3 +278,6 @@
 @media print {
 	.spc { display: none; }
 }
+
+/* Hide the chat button while the full-screen site menu is open. */
+html.has-modal-open .spc { display: none; }
