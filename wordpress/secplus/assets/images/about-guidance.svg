@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 840" width="1000" height="840" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a corporate secretarial review: company documents, a board resolution and a compliance checklist</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF6FC"/>
+      <stop offset="1" stop-color="#D6EEF9"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C2654"/>
+      <stop offset="1" stop-color="#1F1A3D"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#1F1A3D" flood-opacity="0.16"/>
+    </filter>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="#26ABE2" stroke-width="3.2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#26ABE2"/><path d="m7 12 3.5 3.5L17 9" stroke="#1F1A3D" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+
+  <rect width="1000" height="840" rx="40" fill="url(#bg)"/>
+  <circle cx="840" cy="140" r="190" fill="#FFFFFF" fill-opacity="0.45"/>
+  <circle cx="120" cy="760" r="160" fill="#FFFFFF" fill-opacity="0.35"/>
+  <use href="#plus" x="80" y="90" width="56" height="56" opacity="0.45"/>
+  <use href="#plus" x="900" y="640" width="40" height="40" opacity="0.5"/>
+
+  <!-- Back document (board resolution) -->
+  <g transform="rotate(-7 360 420)" filter="url(#sh)">
+    <rect x="170" y="170" width="380" height="500" rx="22" fill="#FFFFFF"/>
+    <rect x="210" y="215" width="170" height="16" rx="8" fill="#1F1A3D"/>
+    <rect x="210" y="250" width="290" height="10" rx="5" fill="#C9D3E3"/>
+    <rect x="210" y="275" width="260" height="10" rx="5" fill="#C9D3E3"/>
+    <rect x="210" y="300" width="280" height="10" rx="5" fill="#C9D3E3"/>
+    <rect x="210" y="345" width="290" height="10" rx="5" fill="#E2E5EE"/>
+    <rect x="210" y="370" width="240" height="10" rx="5" fill="#E2E5EE"/>
+    <rect x="210" y="395" width="270" height="10" rx="5" fill="#E2E5EE"/>
+    <path d="M215 600 c 20 -30 40 10 60 -12 s 30 -20 50 4" stroke="#1F1A3D" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="210" y="615" width="150" height="4" rx="2" fill="#C9D3E3"/>
+  </g>
+
+  <!-- Front document (certificate) -->
+  <g filter="url(#sh)">
+    <rect x="330" y="210" width="400" height="520" rx="24" fill="#FFFFFF"/>
+    <rect x="330" y="210" width="400" height="92" rx="24" fill="url(#navy)"/>
+    <rect x="330" y="270" width="400" height="32" fill="url(#navy)"/>
+    <rect x="370" y="240" width="190" height="16" rx="8" fill="#FFFFFF"/>
+    <rect x="370" y="268" width="120" height="10" rx="5" fill="#8FD3F2"/>
+    <rect x="370" y="340" width="320" height="12" rx="6" fill="#C9D3E3"/>
+    <rect x="370" y="368" width="280" height="12" rx="6" fill="#C9D3E3"/>
+    <rect x="370" y="396" width="300" height="12" rx="6" fill="#C9D3E3"/>
+    <rect x="370" y="440" width="200" height="12" rx="6" fill="#E2E5EE"/>
+    <rect x="370" y="468" width="240" height="12" rx="6" fill="#E2E5EE"/>
+    <!-- Seal -->
+    <circle cx="630" cy="610" r="62" fill="#EAF6FC"/>
+    <circle cx="630" cy="610" r="48" fill="none" stroke="#26ABE2" stroke-width="5" stroke-dasharray="6 7"/>
+    <circle cx="630" cy="610" r="32" fill="#1F1A3D"/>
+    <use href="#plus" x="612" y="592" width="36" height="36"/>
+    <path d="M370 640 c 22 -34 44 12 66 -14 s 32 -22 54 4" stroke="#1F1A3D" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="370" y="660" width="160" height="4" rx="2" fill="#C9D3E3"/>
+  </g>
+
+  <!-- Checklist card -->
+  <g filter="url(#sh)">
+    <rect x="640" y="380" width="290" height="300" rx="22" fill="#FFFFFF"/>
+    <rect x="672" y="410" width="140" height="14" rx="7" fill="#1F1A3D"/>
+    <use href="#tick" x="672" y="452" width="30" height="30"/>
+    <rect x="716" y="462" width="170" height="10" rx="5" fill="#C9D3E3"/>
+    <use href="#tick" x="672" y="502" width="30" height="30"/>
+    <rect x="716" y="512" width="150" height="10" rx="5" fill="#C9D3E3"/>
+    <use href="#tick" x="672" y="552" width="30" height="30"/>
+    <rect x="716" y="562" width="160" height="10" rx="5" fill="#C9D3E3"/>
+    <circle cx="687" cy="617" r="14" fill="none" stroke="#C9D3E3" stroke-width="3"/>
+    <rect x="716" y="612" width="120" height="10" rx="5" fill="#E2E5EE"/>
+  </g>
+
+  <!-- Calendar chip -->
+  <g filter="url(#sh)">
+    <rect x="110" y="560" width="190" height="150" rx="20" fill="#FFFFFF"/>
+    <rect x="110" y="560" width="190" height="44" rx="20" fill="#26ABE2"/>
+    <rect x="110" y="586" width="190" height="18" fill="#26ABE2"/>
+    <rect x="150" y="548" width="10" height="30" rx="5" fill="#1F1A3D"/>
+    <rect x="250" y="548" width="10" height="30" rx="5" fill="#1F1A3D"/>
+    <g fill="#E2E5EE">
+      <rect x="138" y="622" width="26" height="20" rx="5"/><rect x="176" y="622" width="26" height="20" rx="5"/>
+      <rect x="214" y="622" width="26" height="20" rx="5"/><rect x="252" y="622" width="26" height="20" rx="5"/>
+      <rect x="138" y="654" width="26" height="20" rx="5"/><rect x="214" y="654" width="26" height="20" rx="5"/>
+      <rect x="252" y="654" width="26" height="20" rx="5"/>
+    </g>
+    <rect x="176" y="654" width="26" height="20" rx="5" fill="#1F1A3D"/>
+  </g>
+
+  <!-- Pen -->
+  <g transform="rotate(38 820 270)">
+    <rect x="760" y="255" width="150" height="26" rx="13" fill="url(#navy)"/>
+    <path d="M910 255 L 948 268 L 910 281 Z" fill="#26ABE2"/>
+    <rect x="790" y="255" width="10" height="26" fill="#26ABE2"/>
+  </g>
+</svg>

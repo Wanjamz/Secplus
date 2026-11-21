@@ -1,0 +1,44 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"sp-site-header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"sp-main","layout":{"type":"default"}} -->
+<main class="wp-block-group sp-main">
+<!-- wp:group {"tagName":"section","align":"full","className":"sp-page-hero sp-page-hero--simple has-photo","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull sp-page-hero sp-page-hero--simple has-photo"><!-- wp:paragraph {"className":"is-style-eyebrow"} -->
+<p class="is-style-eyebrow">Insights &amp; Resources</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Latest guides and insights</h1>
+<!-- /wp:heading -->
+<!-- wp:pattern {"slug":"secplus/hero-photo-insights"} /--></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"full","className":"sp-section sp-section--mist","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull sp-section sp-section--mist"><!-- wp:query {"queryId":3,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"sp-latest"} -->
+<div class="wp-block-query sp-latest"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"className":"sp-post-card","layout":{"type":"default"}} -->
+<div class="wp-block-group sp-post-card"><!-- wp:post-terms {"term":"category","className":"sp-post-card__cat"} /-->
+<!-- wp:post-title {"level":2,"isLink":true,"className":"sp-post-card__title"} /-->
+<!-- wp:post-excerpt {"excerptLength":24,"className":"sp-post-card__excerpt"} /-->
+<!-- wp:read-more {"content":"Read more","className":"sp-post-card__more"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"className":"sp-empty-note"} -->
+<p class="sp-empty-note">Nothing has been published here yet. Try another topic, read our frequently asked questions or contact us with your question.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></section>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"post-cta"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"sp-site-footer"} /-->

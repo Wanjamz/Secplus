@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-labelledby="t">
+  <title id="t">Stylized Nairobi city skyline at sunrise</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CFEAF8"/>
+      <stop offset="0.55" stop-color="#EAF6FC"/>
+      <stop offset="1" stop-color="#F7FBFE"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.66" cy="0.42" r="0.42">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9C3DA"/>
+      <stop offset="1" stop-color="#C9DCEA"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4E5A86"/>
+      <stop offset="1" stop-color="#6E7BA3"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C2654"/>
+      <stop offset="1" stop-color="#1F1A3D"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#26ABE2" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#26ABE2" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1F1A3D"/>
+      <stop offset="1" stop-color="#16122E"/>
+    </linearGradient>
+    <pattern id="win" width="14" height="18" patternUnits="userSpaceOnUse">
+      <rect x="3" y="4" width="6" height="8" rx="1" fill="#8FD3F2" fill-opacity="0.55"/>
+    </pattern>
+    <pattern id="winSparse" width="22" height="26" patternUnits="userSpaceOnUse">
+      <rect x="6" y="6" width="7" height="10" rx="1" fill="#8FD3F2" fill-opacity="0.35"/>
+    </pattern>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="#26ABE2" stroke-width="3.2" stroke-linecap="round" fill="none"/></symbol>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1000" height="1000" fill="url(#sky)"/>
+  <rect width="1000" height="1000" fill="url(#sun)"/>
+  <circle cx="660" cy="410" r="70" fill="#FFFFFF" fill-opacity="0.9"/>
+  <circle cx="660" cy="410" r="110" fill="#FFFFFF" fill-opacity="0.35"/>
+
+  <!-- Clouds -->
+  <g fill="#FFFFFF">
+    <ellipse cx="250" cy="210" rx="120" ry="22" fill-opacity="0.8"/>
+    <ellipse cx="310" cy="196" rx="70" ry="24" fill-opacity="0.8"/>
+    <ellipse cx="820" cy="150" rx="150" ry="24" fill-opacity="0.65"/>
+    <ellipse cx="760" cy="138" rx="70" ry="22" fill-opacity="0.65"/>
+    <ellipse cx="520" cy="290" rx="90" ry="14" fill-opacity="0.6"/>
+  </g>
+
+  <!-- Brand plus motif -->
+  <use href="#plus" x="868" y="300" width="40" height="40" opacity="0.5"/>
+  <use href="#plus" x="430" y="120" width="26" height="26" opacity="0.35"/>
+  <use href="#plus" x="140" y="330" width="20" height="20" opacity="0.3"/>
+
+  <!-- Distant hills (Ngong) -->
+  <path d="M0 700 C 110 640 210 620 300 650 C 380 676 430 640 520 610 C 600 584 660 600 740 628 C 820 656 900 640 1000 610 L1000 860 L0 860 Z" fill="#D7E7F1"/>
+
+  <!-- Far skyline -->
+  <g fill="url(#far)">
+    <rect x="40" y="610" width="60" height="250"/>
+    <rect x="105" y="640" width="46" height="220"/>
+    <rect x="160" y="585" width="52" height="275"/>
+    <rect x="300" y="600" width="44" height="260"/>
+    <rect x="350" y="565" width="58" height="295"/>
+    <rect x="540" y="590" width="50" height="270"/>
+    <rect x="600" y="620" width="70" height="240"/>
+    <rect x="760" y="575" width="56" height="285"/>
+    <rect x="822" y="610" width="48" height="250"/>
+    <rect x="920" y="590" width="60" height="270"/>
+  </g>
+
+  <!-- Mid skyline -->
+  <g fill="url(#mid)">
+    <rect x="0" y="660" width="70" height="200"/>
+    <rect x="78" y="610" width="64" height="250"/>
+    <rect x="210" y="560" width="70" height="300"/>
+    <path d="M410 860 V 520 L 440 500 L 470 520 V 860 Z"/>
+    <rect x="480" y="600" width="62" height="260"/>
+    <rect x="680" y="540" width="66" height="320"/>
+    <rect x="870" y="560" width="74" height="300"/>
+    <rect x="950" y="640" width="50" height="220"/>
+  </g>
+  <g fill="url(#winSparse)">
+    <rect x="78" y="620" width="64" height="240"/>
+    <rect x="210" y="570" width="70" height="290"/>
+    <rect x="680" y="550" width="66" height="310"/>
+    <rect x="870" y="570" width="74" height="290"/>
+  </g>
+
+  <!-- Front skyline -->
+  <g fill="url(#front)">
+    <!-- Tapered glass tower (left) -->
+    <path d="M118 860 V 470 L 160 430 L 200 470 V 860 Z"/>
+    <rect x="156" y="388" width="8" height="46"/>
+    <!-- Slab tower -->
+    <rect x="252" y="430" width="96" height="430"/>
+    <rect x="268" y="410" width="64" height="22"/>
+    <!-- KICC: conical base, cylinder and saucer crown -->
+    <path d="M430 860 L 470 760 L 610 760 L 650 860 Z"/>
+    <rect x="503" y="360" width="74" height="410" rx="6"/>
+    <ellipse cx="540" cy="356" rx="66" ry="14"/>
+    <rect x="474" y="340" width="132" height="14" rx="7"/>
+    <ellipse cx="540" cy="338" rx="58" ry="10"/>
+    <rect x="537" y="300" width="6" height="40"/>
+    <!-- Prism tower with angled crown -->
+    <path d="M700 860 V 400 L 770 330 L 790 350 V 860 Z"/>
+    <!-- Twin blocks -->
+    <rect x="812" y="500" width="70" height="360"/>
+    <rect x="890" y="470" width="62" height="390"/>
+    <rect x="905" y="440" width="32" height="32"/>
+    <!-- Low blocks -->
+    <rect x="0" y="720" width="120" height="140"/>
+    <rect x="350" y="690" width="80" height="170"/>
+    <rect x="650" y="700" width="52" height="160"/>
+    <rect x="950" y="700" width="50" height="160"/>
+  </g>
+
+  <!-- Window grids and glass highlights -->
+  <g>
+    <path d="M128 860 V 476 L 160 446 L 190 476 V 860 Z" fill="url(#win)"/>
+    <rect x="262" y="446" width="76" height="400" fill="url(#win)"/>
+    <rect x="512" y="380" width="56" height="370" fill="url(#win)"/>
+    <path d="M710 860 V 408 L 770 348 L 780 358 V 860 Z" fill="url(#win)"/>
+    <rect x="820" y="512" width="54" height="340" fill="url(#winSparse)"/>
+    <rect x="898" y="484" width="46" height="370" fill="url(#win)"/>
+    <rect x="503" y="360" width="18" height="410" fill="url(#glass)"/>
+    <path d="M700 860 V 400 L 720 380 V 860 Z" fill="url(#glass)"/>
+    <rect x="252" y="430" width="14" height="430" fill="url(#glass)"/>
+  </g>
+
+  <!-- Ground and acacia trees -->
+  <path d="M0 850 C 200 838 380 846 540 842 C 720 838 860 846 1000 840 L 1000 1000 L 0 1000 Z" fill="url(#ground)"/>
+  <g fill="#16122E">
+    <path d="M86 852 C 90 820 96 800 100 786 C 92 780 80 774 70 772 L 74 768 C 86 770 98 776 104 780 C 108 770 114 760 120 754 L 125 757 C 120 765 114 776 111 788 C 108 806 104 828 102 852 Z"/>
+    <ellipse cx="100" cy="760" rx="78" ry="16"/>
+    <ellipse cx="78" cy="766" rx="40" ry="10"/>
+    <path d="M880 850 C 884 826 888 808 892 796 C 884 790 872 786 864 784 L 867 780 C 878 782 890 787 895 791 C 900 782 906 774 912 770 L 916 773 C 910 780 905 790 903 800 C 900 816 896 834 895 850 Z"/>
+    <ellipse cx="896" cy="774" rx="66" ry="14"/>
+    <ellipse cx="918" cy="780" rx="34" ry="9"/>
+  </g>
+  <rect y="900" width="1000" height="100" fill="#16122E"/>
+</svg>

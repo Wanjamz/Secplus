@@ -1,0 +1,14 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": { "php": "8.2", "wp": "latest" },
+	"login": true,
+	"steps": [
+		{ "step": "activateTheme", "themeFolderName": "secplus" },
+		{ "step": "activatePlugin", "pluginPath": "secplus-core/secplus-core.php" },
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; secplus_core_run_import( array( 'publish_guides' => true ) );"
+		}
+	]
+}

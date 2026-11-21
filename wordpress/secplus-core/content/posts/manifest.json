@@ -1,0 +1,102 @@
+[
+	{
+		"slug": "registering-a-company-in-kenya",
+		"title": "Registering a Company in Kenya: What You Need to Know",
+		"category": "starting-a-business",
+		"service": "company-registration",
+		"excerpt": "An overview of the entity options, typical registration steps, information you will need and the obligations that begin once a Kenyan company is registered.",
+		"meta": "How to register a company in Kenya: entity options, typical steps, documents required, common mistakes and post-registration obligations.",
+		"reader": "Kenyan founders",
+		"order": 0
+	},
+	{
+		"slug": "business-name-or-limited-company-in-kenya",
+		"title": "Business Name or Limited Company in Kenya?",
+		"category": "starting-a-business",
+		"service": "company-registration",
+		"excerpt": "The key differences between registering a business name and incorporating a limited company, and the considerations that usually guide the choice.",
+		"meta": "Business name vs limited company in Kenya: definitions, liability, governance and the factors to consider when choosing a structure.",
+		"reader": "Local startups",
+		"order": 1
+	},
+	{
+		"slug": "registering-a-company-in-kenya-as-a-non-resident",
+		"title": "Registering a Company in Kenya as a Non-Resident",
+		"category": "international-investment",
+		"service": "company-registration",
+		"excerpt": "What international entrepreneurs and diaspora founders should consider when establishing a Kenyan company from abroad: ownership, documents, coordination and obligations.",
+		"meta": "Registering a Kenyan company from abroad: foreign ownership, documentation, remote coordination, approvals and post-registration obligations.",
+		"reader": "International entrepreneurs",
+		"order": 2
+	},
+	{
+		"slug": "branch-or-subsidiary-kenya",
+		"title": "Branch or Subsidiary: Establishing a Presence in Kenya",
+		"category": "international-investment",
+		"service": "company-registration",
+		"excerpt": "How a Kenyan subsidiary differs from registering a branch of a foreign company, and the questions to ask before choosing.",
+		"meta": "Branch vs subsidiary in Kenya: definitions, governance differences, filing considerations and a checklist for foreign companies.",
+		"reader": "Foreign companies",
+		"order": 3
+	},
+	{
+		"slug": "company-annual-returns-in-kenya",
+		"title": "Company Annual Returns in Kenya: A Practical Guide",
+		"category": "corporate-compliance",
+		"service": "corporate-compliance",
+		"excerpt": "What an annual return is, who is responsible for it, the records it relies on and how to correct overdue returns.",
+		"meta": "A practical guide to annual returns for Kenyan companies: purpose, responsibility, required records, deadlines and correcting overdue returns.",
+		"reader": "SMEs",
+		"order": 4
+	},
+	{
+		"slug": "changing-directors-or-shareholders-kenya",
+		"title": "Changing Directors or Shareholders in a Kenyan Company",
+		"category": "corporate-compliance",
+		"service": "corporate-compliance",
+		"excerpt": "The decisions, documents and filings usually involved when directors are appointed or removed, or when shares change hands.",
+		"meta": "Changing directors or shareholders in a Kenyan company: decision records, documentation, filings and advisory considerations.",
+		"reader": "Existing companies",
+		"order": 5
+	},
+	{
+		"slug": "when-does-a-kenyan-company-need-a-company-secretary",
+		"title": "When Does a Kenyan Company Need a Company Secretary?",
+		"category": "company-secretarial-practice",
+		"service": "company-secretarial",
+		"excerpt": "Which Kenyan companies must appoint a company secretary, what the role involves and how the appointment works.",
+		"meta": "Company secretary requirements in Kenya: which companies need one, the role, appointment and ongoing responsibilities.",
+		"reader": "Directors",
+		"order": 6
+	},
+	{
+		"slug": "board-governance-checklist",
+		"title": "Board Governance Checklist for Kenyan Companies",
+		"category": "governance-and-boards",
+		"service": "corporate-governance",
+		"excerpt": "A practical checklist covering board meeting preparation, minutes, registers, decisions, policies and review cadence.",
+		"meta": "A board governance checklist for Kenyan companies: meeting preparation, minutes, registers, decisions, policies and review cadence.",
+		"reader": "Corporate boards",
+		"order": 7
+	},
+	{
+		"slug": "corporate-compliance-checklist",
+		"title": "Corporate Compliance Checklist for Growing Businesses",
+		"category": "corporate-compliance",
+		"service": "corporate-compliance",
+		"excerpt": "The recurring obligations, document organization and warning signs that tell a growing business it is time for a specialist review.",
+		"meta": "A corporate compliance checklist for growing Kenyan businesses: recurring obligations, document organization and when to seek specialist review.",
+		"reader": "SMEs",
+		"order": 8
+	},
+	{
+		"slug": "choosing-a-kenyan-corporate-services-partner",
+		"title": "Choosing a Kenyan Corporate Services Partner From Abroad",
+		"category": "international-investment",
+		"service": "company-secretarial",
+		"excerpt": "What international advisers and investors should look for in a Kenyan corporate services provider: credentials, transparency, secure documentation and scope.",
+		"meta": "How to choose a Kenyan corporate services partner from abroad: credentials, process transparency, secure documentation and service scope.",
+		"reader": "International advisers",
+		"order": 9
+	}
+]

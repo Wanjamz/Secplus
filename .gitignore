@@ -1,0 +1,24 @@
+# Private working files: not part of the shared website
+*.docx
+/2872106dede0da15ec7d1ecc3bc170dd.jpg
+/5fcb2710826b38b2ddf28812590a29f1.jpg
+/6e8fbea621d6efa17f59ff2ba8662cac.jpg
+/840fd8c3aa5189888c1b8c6d291a7713.jpg
+/Services with Icon.jpg
+/secplus-logo-secretarial-Kenya.png
+/Clients logo/
+/handover/
+
+# Local AI-tool and design-tool folders
+/.claude/
+/.agent/
+/.agents/
+/.codex/
+/.gemini/
+/.impeccable/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
